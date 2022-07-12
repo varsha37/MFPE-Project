@@ -1,0 +1,18 @@
+insert into sports values(1,11,'Cricket','Outdoor');
+insert into sports values(2,15,'Football','Outdoor');
+insert into sports values(3,10,'Chess','Indoor');
+insert into sports values(4,12,'Badminton','Indoor');
+
+
+{
+	"eventId" : 1,
+	"eventDate" : "2022-07-08",
+	"eventName" : "AnnualDay",
+	"noOfSlots" : 5,
+	"sportsName" : "Chess"
+}
+
+insert into events values(1,'2022-07-08','abc',5,'Football');
+insert into events values(2,'2022-01-01','def',10,'Cricket');
+insert into events values(3,'2022-02-03','ghi',15,'Badminton');
+insert into events values(4,'2022-03-03','jkl',10,'Chess');

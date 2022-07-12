@@ -1,0 +1,26 @@
+server:
+    port : 8999
+
+eureka:
+    instance:
+        hostname: localhost
+
+spring:
+    application:
+        name: api-gateway
+    cloud:
+        gateway:
+            routes:
+                - id: sports-event-service
+                  uri: lb://sports-event-service
+                  predicates:
+                    -Path=/sports-event/**
+                - id: player-service
+                  uri: lb://player-service
+                  predicates:
+                    -Path=/player/**
+                - id: participation-service
+                  uri: lb://participation-service
+                  predicates:
+                    -Path=/participation/**  
+                
